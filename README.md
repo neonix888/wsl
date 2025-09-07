@@ -2,7 +2,7 @@
 internal error, please report: running "firefox" failed: cannot find installed snap "firefox" at revision 6738: missing file /snap/firefox/6738/meta/snap.yaml
 # Use this if you specifically want the snap version of Firefox in WSL.
 # Enable systemd inside WSL
-`code`echo -e "[boot]\nsystemd=true" | sudo tee /etc/wsl.conf
+`code echo -e "[boot]\nsystemd=true" | sudo tee /etc/wsl.conf`
 
 # Now from Windows PowerShell
 wsl --shutdown

@@ -1,4 +1,5 @@
 # wsl related issues
+internal error, please report: running "firefox" failed: cannot find installed snap "firefox" at revision 6738: missing file /snap/firefox/6738/meta/snap.yaml
 # Use this if you specifically want the snap version of Firefox in WSL.
 # Enable systemd inside WSL
 echo -e "[boot]\nsystemd=true" | sudo tee /etc/wsl.conf
@@ -21,6 +22,6 @@ sudo snap install core
 sudo snap install firefox
 firefox &
 
-# Systemd-in-WSL is officially supported; this is the recommended path when you need snaps. The “missing snap.yaml” error is a known symptom when snapd isn’t actually managing those mounts.
+## Systemd-in-WSL is officially supported; this is the recommended path when you need snaps. The “missing snap.yaml” error is a known symptom when snapd isn’t actually managing those mounts.
 
 
